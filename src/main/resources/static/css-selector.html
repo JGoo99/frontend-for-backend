@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selector</title>
+    <style>
+        /* element selector */
+        p {
+            color: blue;
+        }
+
+        /* class selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* id selector */
+        #header {
+            font-size: 24px;
+        }
+
+        /* child selector */
+        ul > li {
+            list-style-type: square;
+        }
+
+        /* pseudo-class selector */
+        a:hover {
+            color: red;
+        }
+
+        /* attribute selector */
+        input[type="text"] {
+            border: 1px solid gray;
+        }
+
+        /*
+        selector 우선 순위
+
+        !important (비권장)
+        inline style
+        id
+        class
+        tag
+        pseudo-class
+        */
+    </style>
+</head>
+<body>
+<div>
+    <h1 id="header">CSS 선택자 예제</h1>
+    <p>This is a paragraph with some text.</p>
+    <p class="highlight">This is a highlighted paragraph</p>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+    <a href="#">Hover over me</a>
+    <br>
+    <input type="text" placeholder="Text input">
+</div>
+</body>
+</html>
